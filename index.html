@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anime Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="backgroundGlow glowOne"></div>
+    <div class="backgroundGlow glowTwo"></div>
+    <div class="backgroundGlow glowThree"></div>
+
+
+    <!-- Header -->
+    <header class="mainHeader">
+
+        <h1>ANIME <span>QUIZ</span></h1>
+
+        <p>TEST YOUR ANIME KNOWLEDGE</p>
+
+    </header>
+
+
+    <!-- Anime Selection -->
+    <div id="animeSelection">
+
+        <h2>CHOOSE YOUR ANIME</h2>
+
+        <div class="animeGrid">
+
+            <button id="onePieceButton">
+                <span class="cardTitle">ONE PIECE</span>
+                <span class="cardSubtitle">Pirates • Adventure</span>
+            </button>
+
+            <button id="narutoButton">
+                <span class="cardTitle">NARUTO</span>
+                <span class="cardSubtitle">Ninja • Shinobi</span>
+            </button>
+
+            <button id="bleachButton">
+                <span class="cardTitle">BLEACH</span>
+                <span class="cardSubtitle">Soul Reapers</span>
+            </button>
+
+            <button id="deathNoteButton">
+                <span class="cardTitle">DEATH NOTE</span>
+                <span class="cardSubtitle">Mind • Mystery</span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Difficulty Selection -->
+    <div id="difficulty">
+
+        <h2>CHOOSE YOUR DIFFICULTY</h2>
+
+        <div class="difficultyGrid">
+
+            <button id="easyButton">
+                <span class="difficultyTitle">EASY</span>
+                <span class="difficultyDescription">
+                    For casual fans
+                </span>
+            </button>
+
+            <button id="mediumButton">
+                <span class="difficultyTitle">MEDIUM</span>
+                <span class="difficultyDescription">
+                    You know your stuff
+                </span>
+            </button>
+
+            <button id="hardButton">
+                <span class="difficultyTitle">HARD</span>
+                <span class="difficultyDescription">
+                    Only true fans
+                </span>
+            </button>
+
+            <button id="otakuButton">
+                <span class="difficultyTitle">OTAKU</span>
+                <span class="difficultyDescription">
+                    Good luck.
+                </span>
+            </button>
+
+        </div>
+
+        
+
+    </div>
+
+    <button id="backToAnimeButton">←</button>
+
+    <!-- Score -->
+    <div id="score">
+
+        <span class="scoreTitle">CURRENT SCORE</span>
+
+        <div class="scoreValue">
+            <span id="scoreNumber">0</span>
+            <span class="scoreTotal">
+                / <span id="scoreTotalNumber">10</span>
+            </span>
+        </div>
+
+    </div>
+
+
+     <button id="backToDifficultyButton">←</button>
+     
+    <!-- Quiz -->
+    <div id="quiz">
+
+       
+
+        <div class="quizHeader">
+
+            <p id="questionNumber">
+                Question 1 of 10
+            </p>
+
+            <p id="progressText">
+                0%
+            </p>
+
+        </div>
+
+
+        <!-- Progress Bar -->
+        <div id="progressContainer">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+
+        <!-- Question Card -->
+        <div class="questionCard">
+
+            <span class="questionLabel">
+                QUESTION
+            </span>
+
+            <h2 id="question">
+                Question is loading...
+            </h2>
+
+        </div>
+
+
+        <!-- Answers -->
+        <div class="answerGrid">
+
+            <button id="answer1">
+                Answer 1
+            </button>
+
+            <button id="answer2">
+                Answer 2
+            </button>
+
+            <button id="answer3">
+                Answer 3
+            </button>
+
+            <button id="answer4">
+                Answer 4
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Result -->
+    <div id="result">
+
+        <span class="resultLabel">
+            QUIZ COMPLETE
+        </span>
+
+        <h2>Well Played.</h2>
+
+        <div class="resultScore">
+
+            <span class="resultScoreLabel">
+                FINAL SCORE
+            </span>
+
+            <span id="finalScore">
+                Final Score: 0
+            </span>
+
+        </div>
+
+        <button id="restartButton">
+            PLAY AGAIN
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
